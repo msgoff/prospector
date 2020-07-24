@@ -3,7 +3,7 @@ __all__ = ("Formatter",)
 
 
 # pylint: disable=too-few-public-methods
-class Formatter(object):
+class Formatter:
     def __init__(self, summary, messages, profile):
         self.summary = summary
         self.messages = messages

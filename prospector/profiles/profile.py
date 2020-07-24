@@ -35,7 +35,7 @@ class CannotParseProfile(Exception):
         return "Could not parse profile found at %s - it is not valid YAML" % self.filepath
 
 
-class ProspectorProfile(object):
+class ProspectorProfile:
     def __init__(self, name, profile_dict, inherit_order):
         self.name = name
         self.inherit_order = inherit_order

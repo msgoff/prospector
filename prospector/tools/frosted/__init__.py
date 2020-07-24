@@ -8,7 +8,7 @@ from prospector.tools.base import ToolBase
 __all__ = ("FrostedTool",)
 
 
-class ProspectorReporter(object):
+class ProspectorReporter:
     def __init__(self, ignore=None):
         self._messages = []
         self.ignore = ignore or ()

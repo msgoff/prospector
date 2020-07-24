@@ -12,7 +12,7 @@ from prospector.profiles.profile import BUILTIN_PROFILE_PATH, CannotParseProfile
 from prospector.tools import DEFAULT_TOOLS
 
 
-class ProspectorConfig(object):
+class ProspectorConfig:
     # There are several methods on this class which could technically
     # be functions (they don't use the 'self' argument) but that would
     # make this module/class a bit ugly.

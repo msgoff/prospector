@@ -20,11 +20,12 @@ __all__ = (
 )
 
 
-class Prospector(object):
+class Prospector:
     def __init__(self, config):
         self.config = config
         self.summary = None
         self.messages = config.messages
+        print(self.config)
 
     def process_messages(self, found_files, messages):
         for message in messages:
